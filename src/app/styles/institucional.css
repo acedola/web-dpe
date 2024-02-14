@@ -1,0 +1,100 @@
+/*institucional*/
+.title-institucional {
+  margin-top: -15px;
+  height: 200px;
+  background-color: var(--mid-gray);
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "a b";
+}
+.title-institucional h1 {
+  color: white;
+  font-size: 60px;
+  font-weight: lighter;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-botones {
+  display: grid;
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "a b";
+}
+
+.container-botones a {
+  display: flex;
+  font-size: 16px;
+  font-family: "EncodeSans", sans-serif !important;
+  width: 97%;
+  height: 60px;
+  background-color: rgb(40, 42, 53);
+  color: white;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 40px;
+  border: solid 1px rgb(40, 42, 53);
+}
+.container-botones :hover {
+  background-color: var(--light-blue);
+  border: solid 1px rgb(40, 42, 53);
+}
+.title-mision {
+  display: flex;
+  background-color: var(--light-blue);
+  font-size: 20px;
+  margin: 0;
+  color: white;
+  height: 50px;
+  padding: 7px;
+  place-items: center;
+}
+.title-mision p {
+  margin-left: 15%;
+}
+
+.main-info {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  justify-content: center;
+  background-color: aliceblue;
+  color: #444;
+  font-family: "EncodeSans", sans-serif !important;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 160%;
+  padding: 50px;
+  border-radius: 10px;
+  margin: 30px 15% 30px 15%;
+  border-left: 5px solid var(--light-blue);
+  box-shadow: 0 15px 20px -15px;
+}
+.main-info h1 {
+  margin: 20px;
+  font-family: "EncodeSans", sans-serif !important;
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--black);
+}
+.main-info p {
+  font-family: "EncodeSans", sans-serif !important;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 160%;
+  padding: 0 20px;
+}
+.main-info ul {
+  list-style-type: none;
+  padding: 0 20px;
+}
+.main-info li {
+  margin: 30px 0;
+}
