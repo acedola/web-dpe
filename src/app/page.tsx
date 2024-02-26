@@ -3,9 +3,9 @@ import Image from 'next/image';
 import NoticiaArt from '@/components/UltimasN';
 import { useState, useEffect } from 'react';
 
-const startCount = 10000;
+const startCount = 15000000;
 const endCount = 17569053;
-const duration = 3000; // Duration in milliseconds
+const duration = 500; // Duration in milliseconds
 
 export default function Home() {
   const [count, setCount] = useState(startCount);

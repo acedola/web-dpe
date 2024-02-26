@@ -8,6 +8,7 @@ interface NoticiaData {
   id: number;
   attributes: {
     Titulo: string;
+    resumen: string;
     articulo: string;
     imagen: {
       data: {
@@ -93,7 +94,7 @@ const NoticiaArt: React.FC = () => {
                   <p
                     className="w-full mb-3 px-8  text-gray-500 dark:text-gray-400"
                     dangerouslySetInnerHTML={{
-                      __html: item.attributes.articulo
+                      __html: item.attributes.resumen
                     }}
                   />
                 </div>

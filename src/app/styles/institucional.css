@@ -1,7 +1,7 @@
 /*institucional*/
 .title-institucional {
   margin-top: -15px;
-  height: 200px;
+  height: 25vh;
   background-color: var(--mid-gray);
   display: grid;
   grid-gap: 0;
@@ -11,7 +11,7 @@
 }
 .title-institucional h1 {
   color: white;
-  font-size: 60px;
+  font-size: 40px;
   font-weight: lighter;
   display: flex;
   align-items: center;
@@ -21,7 +21,7 @@
 .container-botones {
   display: grid;
   margin-top: 10px;
-  width: 100%;
+  width: 90%;
   padding: 10px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas: "a b";
@@ -29,6 +29,7 @@
 
 .container-botones a {
   display: flex;
+  margin-top: 10px;
   font-size: 16px;
   font-family: "EncodeSans", sans-serif !important;
   width: 97%;

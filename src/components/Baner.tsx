@@ -14,8 +14,7 @@ export function Baner() {
       <div className="banner-logo">
         <img
           className="header-img"
-          width={500}
-          height={250}
+         
           alt=""
           src="/../images/provincia.svg"
         />

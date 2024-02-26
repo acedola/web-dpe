@@ -92,7 +92,8 @@ header {
   align-items: center;
   width: 100%;
   background-color: var(--light-blue);
-  background-image: url(/images//imgDPE.jpg);
+  background-image: url(/images/imgDPE.jpg);
+  background-size: cover; /* Ajustar la imagen para cubrir todo el contenedor */
   height: 10vw;
 }
 
@@ -283,7 +284,6 @@ main {
 }
 
 .ultimas-novedades p {
-  display: flex;
   text-align: start;
   padding: 10px;
   left: 50px;

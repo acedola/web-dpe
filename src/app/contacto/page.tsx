@@ -1,11 +1,10 @@
 "use client";
 //import { Menumain } from "../../components/Menumain";
 import { Footer } from "../../components/Footer";
-import { Main_Menu } from '@/components/Menu_main'
 export default function Contacto() {
   return (
     <>
-      <Main_Menu />
+      
       <main className="main-contact">
         <div className="card-info">
           <ul>
@@ -13,6 +12,7 @@ export default function Contacto() {
             <li>La Plata. Buenos Aires, Argentina.</li>
             <li>Telefonos (0221) 429-4400</li>
             <li>Internos 907014 / 97016 </li>
+            <li>dpe@estadistica.ec.gba.gov.ar</li>
           </ul>
         </div>
 
