@@ -1,0 +1,228 @@
+
+:root {
+    --primary-clr: #b38add;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    position: relative;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+}
+
+.container {
+    display: flex;
+    height: 450px;
+    width: 820px;
+    margin-top: 10px;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #373c4f;
+    padding-bottom: 10px;
+}
+
+.left {
+    width: 70%;
+    padding: 20px;
+    height: 610px;
+}
+
+.calendar {
+    position: relative;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    color: #878895;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.calendar::before {
+    height: 90%;
+    left: calc(100% + 12px);
+    background-color: rgb(153, 153, 153);
+}
+
+.calendar .month {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.calendar .month .prev,
+.calendar .month .next {
+    cursor: pointer;
+}
+
+.calendar .month .prev:hover,
+.calendar .month .next:hover {
+    color: var(--primary-clr);
+}
+
+.calendar .weekdays {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+    padding: 0 20px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.weekdays div {
+    width: 14.28%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar .days {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1px;
+    padding: 0 20px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.calendar .days .day {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--primary-clr);
+    border: 1px solid #f5f5f5;
+}
+
+.calendar .days .day.event {
+    background-color: #00AEC3;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.calendar .days .day:nth-child(7n + 1) {
+    color: #ff6262;
+}
+
+.calendar .days .day:nth-child(7n) {
+    color: #70a1ff;
+}
+
+.event-container {
+    width: 60%;
+    padding: 20px;
+}
+
+.event-container a {
+    color: inherit; /* Hereda el color del texto del contenedor */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.event-container a:hover {
+    text-decoration: none; /* Subrayado al pasar el mouse */
+}
+
+/* Asegúrate de que los estilos generales para el contenedor de eventos también se apliquen */
+.event-container {
+    font-family: Arial, sans-serif; /* Fuente consistente */
+    padding: 10px; /* Espaciado interno */
+}
+
+.calendar .days .day.current-day {
+    background-color: #ebcb55;
+    border-radius: 50%;
+}
+
+.formato-eventos{
+    font-size: bold;
+}
+
+
+
+.day.event {
+    background-color: #00AEC3; /* Color celeste */
+    color: white; /* Color del texto */
+}
+
+.day.past-event {
+    background-color: #d3d3d3; /* Color gris */
+    color: black; /* Color del texto */
+    border-radius: 50px; /* Bordes redondeados */
+}
+
+
+.event {
+    display: inline-flex; /* Esto permite que el icono y el texto estén en línea */
+    align-items: center; /* Esto alinea verticalmente el icono y el texto */
+}
+
+.event i {
+    margin-right: 5px; /* Espacio entre el icono y el texto */
+}
+
+
+.event-container {
+    margin-top: 20px;
+}
+
+.formato-eventos {
+    list-style-type: none;
+    padding: 0;
+}
+
+.formato-eventos li {
+    margin-bottom: 10px;
+}
+
+.formato-eventos li .arrow {
+    margin-left: 10px;
+}
+
+
+
+/* Media Query para pantallas móviles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .left {
+        width: 100%;
+        height: auto;
+    }
+
+    .event-container {
+        width: 100%;
+        padding: 20px;
+        height: auto;
+    }
+
+    
+}
+
+

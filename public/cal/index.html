@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mantente organizado con nuestro calendario fácil de usar que presenta eventos, recordatorios y una interfaz personalizable. Construido con HTML, CSS y JavaScript. ¡Comienza a programar hoy!">
+    <meta name="keywords" content="calendario, eventos, recordatorios, javascript, html, css, codificación de código abierto">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Calendario</title>
+</head>
+<body>
+<div class="container mobile-view">
+    <div class="left">
+        <div class="calendar">
+            <div class="month">
+                <i class="fas fa-angle-left prev"></i>
+                <div class="date">
+                    <h1 id="month"></h1>
+                    <p id="date-str"></p>
+                </div>
+                <i class="fas fa-angle-right next"></i>
+            </div>
+            <div class="weekdays">
+                <div>Dom</div>
+                <div>Lun</div>
+                <div>Mar</div>
+                <div>Mié</div>
+                <div>Jue</div>
+                <div>Vie</div>
+                <div>Sáb</div>
+            </div>
+            <div class="days"></div>
+           
+
+
+        </div>
+    </div>
+    <div class="event-container">
+        <ul id="event-list" class="formato-eventos"></ul>
+    </div>
+    
+</div>
+<script src="script.js"></script>
+</body>
+</html>

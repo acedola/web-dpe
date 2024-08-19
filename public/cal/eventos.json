@@ -1,0 +1,22 @@
+[
+    { "fecha": "2024-04-05", "descripcion": "Reunión de equipo" },
+    { "fecha": "2024-04-05", "descripcion": "Entrega de informe" },
+    { "fecha": "2024-04-09", "descripcion": "Llamada con cliente" },
+    { "fecha": "2024-05-20", "descripcion": "Ventas Supermercados Provinciales" },
+    { "fecha": "2024-05-22", "descripcion": "Informe Agropecuario PBA" },
+    { "fecha": "2024-05-27", "descripcion": "Resumen Datos Productivos Bonaerenses" },
+    { "fecha": "2024-05-27", "descripcion": "Indicador Sintético de la Industria Manufacturera (ISIM-PBA)" },
+    { "fecha": "2024-05-28", "descripcion": "Ventas Supermercados Provinciales" },
+    { "fecha": "2024-05-31", "descripcion": "Esta fecha es una Prueba" },
+    { "fecha": "2024-06-14", "descripcion": "Síntesis de Exportaciones Provinciales", "url" : "http://www.desa.estadistica.ec.gba.gov.ar/estadisticas/3" },
+    { "fecha": "2024-06-24", "descripcion": "Ventas Supermercados Provinciales", "url" : "http://www.desa.estadistica.ec.gba.gov.ar/estadisticas/2" },
+    { "fecha": "2024-06-26", "descripcion": "Resumen Datos Productivos Bonaerenses", "url" : "http://www.desa.estadistica.ec.gba.gov.ar/estadisticas/29" },
+    { "fecha": "2024-06-26", "descripcion": "Indicador Sintético de la Industria Manufacturera (ISIM-PBA)" },
+    { "fecha": "2024-07-02", "descripcion": "Indicadores del Mercado Laboral. Total 6 aglomerados PBA" },
+    { "fecha": "2024-07-04", "descripcion": "Indicador Trimestral de Actividad Económica (ITAE-PBA)" },
+    { "fecha": "2024-07-15", "descripcion": "Síntesis de Exportaciones Provinciales" },
+    { "fecha": "2024-07-15", "descripcion": "Producto Bruto Geográfico-PBA 2023" },
+    { "fecha": "2024-07-26", "descripcion": "Resumen Datos Productivos Bonaerenses" },
+    { "fecha": "2024-07-26", "descripcion": "Indicador Sintético de la Industria Manufacturera (ISIM-PBA)" },
+    { "fecha": "2024-07-29", "descripcion": "Ventas Supermercados Provinciales" }
+]

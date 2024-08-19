@@ -1,0 +1,118 @@
+/*Autoridades*/
+
+.card-perfil {
+  display: flex;
+  /*justify-content: center;
+  margin: 60px 0;*/
+  margin: 60px auto 60px 30%;
+}
+
+.card-perfil img {
+  margin: 0 20px 0 0;
+}
+
+.card-perfil ul {
+  list-style-type: none;
+  color: var(--black);
+}
+
+.card-perfil .titulo-principal {
+  color: var(--light-blue);
+  padding-top: 15px;
+}
+
+.card-perfil .titulo-secundario {
+  font-weight: bold;
+  padding-top: 30px;
+}
+
+.card-perfil .correo-electronico {
+  padding-top: 30px;
+}
+
+.card-perfil .telefono {
+  padding-top: 30px;
+}
+
+.organigrama {
+  width: 30%;
+  margin: 60px auto 100px 30%;
+  display: flex;  
+  align-items: center;}
+
+.organigrama .boton-secundario {
+  margin: 5px;
+  border: 0;
+  background-color: inherit;
+}
+.organigrama img {
+  height: 80px;
+}
+.organigrama input:hover {
+  text-decoration: underline;
+}
+.organigrama p {
+  display: flex;
+  align-items: center;
+}
+.organigrama div {
+  display: flex;
+  align-items: center;
+}
+
+/* BARRA QUE INDICA RUTA EN LA PAGINA*/
+
+.nav-descripcion {
+  display: block;
+  margin: 0;
+  position: relative;
+  background-color: var(--black);
+  text-align: start;
+  height: 60px;
+}
+.nav-descripcion ul {
+  padding: 17px 20px;
+  margin-right: 100px;
+  list-style-type: none;
+  display: flex;
+  justify-content: start;
+}
+.nav-descripcion li {
+  margin: 2px;
+  padding-top: 2px;
+  color: white;
+  text-decoration: none;
+  font-size: var(--md);
+}
+.nav-descripcion .separador {
+  color: var(--light-blue);
+  font-size: var(--md);
+}
+
+.parrafos :hover{
+  color: #1717FF;
+  cursor: pointer;
+}
+
+.tamano-div{
+  width: 120px;  
+  height: 150px;
+  display: flex;
+  
+}
+
+.ley{
+  display: flex;
+  width: 70%;
+  justify-content: space-around;  
+  background-color: aliceblue;
+  color: #444;
+  font-family: 'EncodeSans', sans-serif !important;
+  line-height: 160%;
+  padding: 50px;
+  border-radius: 10px;
+  margin: 30px 15% 30px 15%;
+  border-left: 5px solid var(--light-blue);
+  box-shadow: 0 15px 20px -15px;
+}
+

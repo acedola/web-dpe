@@ -1,0 +1,73 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model estadisticas {
+  id             Int       @id @default(autoincrement())
+  nombre         String?   @db.VarChar(255)
+  created_at     DateTime? @db.Timestamp(6)
+  updated_at     DateTime? @db.Timestamp(6)
+  published_at   DateTime? @db.Timestamp(6)
+  created_by_id  Int?
+  updated_by_id  Int?
+  id_estadistica String?   @unique(map: "estadisticas_id_estadistica_unique") @db.VarChar(255)
+
+  @@index([created_by_id], map: "estadisticas_created_by_id_fk")
+  @@index([updated_by_id], map: "estadisticas_updated_by_id_fk")
+}
+
+model categorias {
+  id             Int              @id @default(autoincrement())
+  id_categoria   String?          @unique(map: "categorias_id_categoria_unique") @db.VarChar(255)
+  cat_nombre     String?          @db.VarChar(255)
+  created_at     DateTime?        @db.Timestamp(6)
+  updated_at     DateTime?        @db.Timestamp(6)
+  published_at   DateTime?        @db.Timestamp(6)
+  created_by_id  Int?
+  updated_by_id  Int?
+  estadistica_id Int?
+  sub_categorias sub_categorias[]
+
+  @@index([created_by_id], map: "categorias_created_by_id_fk")
+  @@index([updated_by_id], map: "categorias_updated_by_id_fk")
+}
+
+model articulos {
+  id            Int       @id @default(autoincrement())
+  titulo        String?   @db.VarChar(255)
+  parrafo       String?
+  cuadros       String?
+  informes      String?
+  created_at    DateTime? @db.Timestamp(6)
+  updated_at    DateTime? @db.Timestamp(6)
+  published_at  DateTime? @db.Timestamp(6)
+  created_by_id Int?
+  updated_by_id Int?
+  id_sub_cat    Int?
+  id_articulo   String?   @unique(map: "articulos_id_articulo_unique") @db.VarChar(255)
+
+  @@index([created_by_id], map: "articulos_created_by_id_fk")
+  @@index([updated_by_id], map: "articulos_updated_by_id_fk")
+}
+
+model sub_categorias {
+  id            Int         @id @default(autoincrement())
+  nombre_sub_c  String?     @db.VarChar(255)
+  created_at    DateTime?   @db.Timestamp(6)
+  updated_at    DateTime?   @db.Timestamp(6)
+  published_at  DateTime?   @db.Timestamp(6)
+  created_by_id Int?
+  updated_by_id Int?
+  id_categoria  Int?
+  id_sub_cat    String?     @unique(map: "sub_categorias_id_sub_cat_unique") @db.VarChar(255)
+  categoria     categorias? @relation(fields: [categoriasId], references: [id])
+  categoriasId  Int?
+
+  @@index([created_by_id], map: "sub_categorias_created_by_id_fk")
+  @@index([updated_by_id], map: "sub_categorias_updated_by_id_fk")
+}

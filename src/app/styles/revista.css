@@ -1,0 +1,29 @@
+.revistaAnteriores{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.one{
+    flex: 0.5 0.5 ;
+}
+
+.one img{
+    width: 65%;
+    margin-left: 50px;
+}
+
+.two{
+    flex: 1 0.5;
+    text-align: justify;
+}
+
+.revista6{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.revistaP{
+    text-align: justify;
+}
