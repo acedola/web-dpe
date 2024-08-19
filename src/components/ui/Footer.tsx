@@ -1,12 +1,12 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
 
 export function Footer() {
   return (
     <footer>
       <div>
         <Image
-          src="/../images/footer.jpg"
+          src="/images/footer.jpg"
           width={538}
           height={252}
           alt="provincia"
