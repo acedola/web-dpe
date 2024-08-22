@@ -98,13 +98,12 @@ export default function Home() {
           <section className="ultimas-novedades">
             <NoticiaArt />
           </section>
-          <section className="calendario-boton-genero">
+          <section className="flex px-14 justify-center">
             <a href="https://www.sipg.ec.gba.gob.ar" className="boton-genero">
               <Image
-                className="genero"
-                src="/images/PLACA GENERO1-01.jpg"
+                src="/images/placagenero.svg"
                 alt="boton-genero"
-                width={885}
+                width={850}
                 height={40}
               ></Image>
             </a>
@@ -150,13 +149,13 @@ export default function Home() {
             </div>
           </div>
 
-          <section className="calendario-boton-genero">
-            <a href="https://www.sipg.ec.gba.gob.ar" className="boton-genero">
+          <section className="flex px-14">
+            <a href="https://www.sipg.ec.gba.gob.ar">
               <Image
-                className="genero"
-                src="/images/PLACA GENERO1-01.jpg"
+                className="rounded-sm"
+                src="/images/placacenso.svg"
                 alt="boton-genero"
-                width={885}
+                width={850}
                 height={40}
               ></Image>
             </a>
