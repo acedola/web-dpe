@@ -461,8 +461,8 @@ footer a:hover {
 }
 
 .btnNuevo {
-  width: 83%;
-  margin-left: 65px;
+  width: 88%;
+  margin-left: 3px;
   border-radius: 10px;
   border-color: var(--color-rosa);
   color: var(--color-rosa);

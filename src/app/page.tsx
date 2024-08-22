@@ -98,16 +98,6 @@ export default function Home() {
           <section className="ultimas-novedades">
             <NoticiaArt />
           </section>
-          <section className="flex px-14 justify-center">
-            <a href="https://www.sipg.ec.gba.gob.ar" className="boton-genero">
-              <Image
-                src="/images/placagenero.svg"
-                alt="boton-genero"
-                width={850}
-                height={40}
-              ></Image>
-            </a>
-          </section>
         </div>
 
         <div className="container-2">
@@ -148,20 +138,30 @@ export default function Home() {
               </a>
             </div>
           </div>
-
-          <section className="flex px-14">
-            <a href="https://www.sipg.ec.gba.gob.ar">
-              <Image
-                className="rounded-sm"
-                src="/images/placacenso.svg"
-                alt="boton-genero"
-                width={850}
-                height={40}
-              ></Image>
-            </a>
-          </section>
         </div>
       </main>
+      <seccion className="flex w-full">
+        <section className="px-14 justify-center">
+          <a href="https://www.sipg.ec.gba.gob.ar" className="boton-genero">
+            <Image
+              src="/images/placagenero.svg"
+              alt="boton-genero"
+              width={910}
+              height={40}
+            ></Image>
+          </a>
+        </section>
+        <section className="px-20">
+          <a href="https://www.sipg.ec.gba.gob.ar">
+            <Image
+              src="/images/placacenso.svg"
+              alt="boton-censo"
+              width={910}
+              height={40}
+            ></Image>
+          </a>
+        </section>
+      </seccion>
       <section className="botones">
         <a className="item-g" href="/censos">
           CENSOS
