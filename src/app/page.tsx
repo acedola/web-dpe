@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react';
 import React from 'react';
 import IntegerCounter from '@/components/ui/IntegerCounter';
 import PercentageCounter from '@/components/ui/PercentageCounter';
+import Calendar from '@/components/ui/calendar';
 
 export default function Home() {
   return (
@@ -98,6 +99,17 @@ export default function Home() {
           <section className="ultimas-novedades">
             <NoticiaArt />
           </section>
+          <section className="calendario-boton-genero">
+            <a href="https://www.sipg.ec.gba.gob.ar" className="boton-censo">
+              <Image
+                className="censo"
+                src="/images/PLACACENSOWEBNUEVA-02.jpg"
+                alt="boton-genero"
+                width={885}
+                height={40}
+              ></Image>
+            </a>
+          </section>
         </div>
 
         <div className="container-2">
@@ -105,7 +117,9 @@ export default function Home() {
             <p className="titulo-p">CALENDARIO DE DIFUSIÓN</p>
           </section>
 
-          <iframe className="iframe-calendar" src="/cal/index.html"></iframe>
+          <div className="Calendar">
+            <Calendar />
+          </div>
 
           <div className="botonesNuevos">
             <div className="btnNuevo bg-transparent text-blue-700 font-semibold py-2 px-4 border hover:border-transparent rounded text-center ">
@@ -116,12 +130,12 @@ export default function Home() {
 
             <div className="btnNuevo bg-transparent text-blue-700 font-semibold py-2 px-4 border hover:border-transparent rounded text-center  ">
               <a href="revista" target="_blank">
-                REVISTA ESTUDIOS DE POBLACIÓN
+                REVISTA ESTUDIOS DE POBLACIÃ“N
               </a>
             </div>
             <div className="btnNuevo bg-transparent text-blue-700 font-semibold py-2 px-4 border hover:border-transparent rounded text-center  ">
-              <a href="https://sipg.ec.gba.gov.ar/" target="_blank">
-                SISTEMAS DE INDICADORES
+              <a href="http://" target="_blank">
+                ENCUESTA DE SERVICIOS DE SALUD, EPAUSS 2023
               </a>
             </div>
             <div className="btnNuevo bg-transparent text-blue-700 font-semibold py-2 px-4 border hover:border-transparent rounded text-center  ">
@@ -134,39 +148,29 @@ export default function Home() {
             </div>
             <div className="btnNuevo bg-transparent text-blue-700 font-semibold py-2 px-4 border hover:border-transparent rounded text-center  ">
               <a href="http://" target="_blank">
-                XXXXXXXXXXXX
+                ENCUESTA DE CONSUMO ENERGÉTICO RESIDENCIAL 2023
               </a>
             </div>
           </div>
+          <section className="calendario-boton-genero">
+            <a href="https://www.sipg.ec.gba.gob.ar" className="boton-genero">
+              <Image
+                className="genero"
+                src="/images/PLACAGENEROWEBNUEVA.jpg"
+                alt="boton-genero"
+                width={885}
+                height={40}
+              ></Image>
+            </a>
+          </section>
         </div>
       </main>
-      <seccion className="flex w-full">
-        <section className="px-14 justify-center">
-          <a href="https://www.sipg.ec.gba.gob.ar" className="boton-genero">
-            <Image
-              src="/images/placagenero.svg"
-              alt="boton-genero"
-              width={910}
-              height={40}
-            ></Image>
-          </a>
-        </section>
-        <section className="px-20">
-          <a href="https://www.sipg.ec.gba.gob.ar">
-            <Image
-              src="/images/placacenso.svg"
-              alt="boton-censo"
-              width={910}
-              height={40}
-            ></Image>
-          </a>
-        </section>
-      </seccion>
+
       <section className="botones">
         <a className="item-g" href="/censos">
           CENSOS
         </a>
-        <a className="item-a" href="/publicaciones">
+        <a className="item-a" href="/anuarios">
           ANUARIOS
         </a>
         <a className="item-b" href="#">
@@ -191,7 +195,7 @@ export default function Home() {
           href="https://encuestas.estadistica.ec.gba.gov.ar/index.php/886163?lang=es"
           target="_blank"
         >
-          CONVOCATORIA ABIERTA A ENCUESTADORES
+          CONVOCATORIA ENCUESTADORES
         </a>
         <a
           className="item-h"

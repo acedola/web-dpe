@@ -1,0 +1,207 @@
+/* styles/Calendar.module.css */
+.calendarContainer {
+    --primary-clr: #b38add;
+    position: relative;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+  }
+  .calendarContainer * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+    
+    .container {
+      display: flex;
+      justify-content: center;
+      height: 470px;
+      width: 800px;
+      margin-top: 50px;
+      margin-left: 50px;
+      margin-bottom: 20px;
+      color: #fff;
+      border-radius: 10px;
+      background-color: #373c4f;
+    }
+    
+    .left {
+      width: 100%;
+      padding: 20px;
+      height: 600px;
+    }
+    
+    .calendar {
+      position: relative;
+      width: 100%;
+      height: 75%;
+      display: flex;
+      flex-direction: column;
+      color: #878895;
+      border-radius: 5px;
+      background-color: #fff;
+    }
+    
+    .month {
+      width: 100%;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 50px;
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-transform: capitalize;
+    }
+    
+    .prev,
+    .next {
+      cursor: pointer;
+    }
+    
+    .prev:hover,
+    .next:hover {
+      color: var(--primary-clr);
+    }
+  
+    .month i {
+      font-size: 1.5rem; /* Ajusta el tamaño */
+      color: #000; /* Ajusta el color para asegurarte de que sean visibles */
+    }
+    
+    
+    .weekdays {
+      width: 100%;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      font-size: 0.7rem;
+      font-weight: 500;
+      text-transform: capitalize;
+    }
+    
+    .weekdays div {
+      width: 14.28%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .days {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 1px;
+      padding: 0 20px;
+      font-size: 0.80rem;
+      font-weight: 500;
+    }
+    
+    .day {
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: var(--primary-clr);
+      border: 1px solid #f6eaea;
+    }
+    
+    .day.event {
+      background-color: #00aec3;
+      color: #fff;
+      border-radius: 50%;
+    }
+    
+    .day.current-day {
+      background-color: #f7df85;
+      border-radius: 580%;
+    
+    }
+  
+    .day:nth-child(7n + 1) {
+      color: #ff6262;
+    }
+  
+    .day:nth-child(7n) {
+      color: #70a1ff;
+    }
+    
+    .event-container {
+      width: 70%;
+      padding: 20px;
+    }
+  
+    .pastEvent {
+      background-color: #d3d3d3;
+      color: #fff;
+    }
+    
+    .empty {
+      visibility: hidden;
+    }
+    
+    /* Calendar.module.css */
+  .currentDay {
+      background-color: #ff0; /* Ejemplo de color para marcar el día actual */
+      border-radius: 60%;
+    }
+    
+  
+  .formatoEventos {
+      font-size: large;
+  }
+  
+  .eventContainer {
+    width: 70%;
+    padding: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Cambia de fila a columna */
+      height: auto; /* Ajusta la altura automáticamente */
+      width: 90%; /* Usa todo el ancho disponible */
+      margin-left: 15px;
+      margin-top: 40px; /* Centra el contenedor horizontalmente */
+    }
+  
+    .left {
+      width: 100%; /* Asegura que el calendario use todo el ancho disponible */
+      padding: 10px;
+      height: auto; /* Ajusta la altura automáticamente */
+    }
+  
+    .calendar {
+      width: 100%;
+      height: auto; /* Ajusta la altura automáticamente */
+    }
+  
+    .eventContainer {
+      width: 100%; /* Asegura que el contenedor de eventos use todo el ancho disponible */
+      padding: 10px;
+      margin: 0 auto; /* Centra el contenedor de eventos horizontalmente */
+    }
+
+    .month {
+      padding: 0 35px;
+    }
+ }
+
+
+
+/* Estilos específicos para notebooks (1025px - 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px){
+
+ 
+  .container{
+    width: 85%;
+  }
+}

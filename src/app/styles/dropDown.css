@@ -1,9 +1,9 @@
 /*drop down*/
 .nav-container {
   margin-top: -6px;
-
   position: absolute;
   display: flex;
+  z-index: 9999; /* Asegura que el menú se superpone a otros elementos */
 }
 .position1 {
   margin-left: 8%;
@@ -53,4 +53,34 @@
 }
 .column-4 li p {
   height: 23px;
+}
+
+
+/* Estilos para versión móvil */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    width: 65%;
+    margin-left: 10px;
+  }
+  
+  .dropdown {
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dropdown li {
+    width: 100%;
+    padding: 0px 0;
+  }
+
+  .dropdown li p {
+    font-size: 4vw; /* Ajusta el tamaño del texto */
+  }
+
+  .dropdown li a {
+    font-size: 3.5vw; /* Ajusta el tamaño del texto */
+  }
 }
